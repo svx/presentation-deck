@@ -18,7 +18,8 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
-  color: #09574D; }
+  /*color: #09574D;*/
+  color: #77777F; }
 
 ::selection {
   color: #fff;
@@ -40,7 +41,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #00564C;
+  color: #229922;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -251,7 +252,7 @@ body {
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #42affa; }
+  border-left-color: #6396C2; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
