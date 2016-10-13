@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Documentation For Developer</title>
 
-		<link rel="stylesheet" href="/css/reveal.css">
-		<link rel="stylesheet" href="decks/about_me/svx.css">
+		<name="description" content="Intro Docs for Devs">
+		<name="author" content="Sven Strack">
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="svx.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../../lib/css/zenburn.css">
@@ -17,7 +20,7 @@
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../css/print/pdf.css' : '../../css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -27,16 +30,62 @@
 				<section>
 					<h1> Documentation For Developer </h1>
 					<h4> Plone Conference - Boston 2016</h4>
-                                        <aside class="notes">
-                                            Here some notes
-                                        </aside>
+					<p><small><a href="https://leftxs.org">Sven Strack</a> / <a href="https://twitter.com/der_sven_">@der_sven_</a></small></p>
+                     <aside class="notes">
+                      - Who thinks, docs are a important part of your Product ?
+                      </br>
+                      - Who here is mostly a developer ?
+                      </br>
+                      - Who here writes lots of documentation ?
+                      </br>
+                      - Who here is testing docs as part of your daily workflow with CI
+                      </aside>
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Outline</h2>
+					<ul>
+					<li>Short overview, why docs are important </li>
+					<li>Talk about philosophy, strategy, tone </li>
+					<li>Dive into writing and workflow </li>
+					<li>Different ways of testing </li>
+					</ul>
+					<aside class="notes">
+					- It's not like a normal training
+					<br>
+					- Me will talk a lot, some exercises at the end
+					</br>
+					- We will see different examples on how you can do it
+					</br>
+					- Because docs is different than code, it really depends on your company setup
+					</aside>
+				</section>
+				<section>
+					<h2>That's Me</h2>
+					<img align="left" data-src="img/sven-talk-pola-scale.png" alt="Picture of Me">
+					<br>
+					<small>
+					<ul>
+						<li>Working with Plone since 2006</li>
+						<li>Mostly deployment and hosting</li>
+						<li>Member of the Docs Team</li>
+						<li>Member of the 'Write the Docs' Community
+						<li>Founding member of 'Test the Docs'
+						<li class="fragment"> I like to complain</li>
+					</ul>
+					</small>
+				</section>
+				<section>
+					<h1> I suck at writing documentation ! </h1>
+				</section>
+				<section>
+					<h1> Questions ?</h1>
+					<p class="fragment">Let us begin </p>
+				</section>
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -45,10 +94,10 @@
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: '../../plugin/markdown/marked.js' },
+					{ src: '../../plugin/markdown/markdown.js' },
+					{ src: '../../plugin/notes/notes.js', async: true },
+					{ src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
